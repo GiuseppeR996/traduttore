@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Traduttore</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="panel">
+            <h1>Traduttore</h1>
+        </header>
+
+        <main>
+            <section class="panel translation">
+                <div class="translation-flag"></div>
+                <div class="translation-result">
+                    <p class="translation-text">Traduzione</p>
+                </div>
+            </section>
+
+            <section class="panel controls">
+                <input class="text-input" type="text" placeholder="inserisci testo da tradurre">
+                <button class="lang-button" data-lang="en">EN</button>
+                <button class="lang-button" data-lang="fr">FR</button>
+                <button class="lang-button" data-lang="de">DE</button>
+                <button class="lang-button" data-lang="es">ES</button>
+                <button class="reset-button">❌</button>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Challenge 
+
+    - Ogni lingua cambia aspetto dell'app
+    - Pulsanti da JS partendo da un array di oggetti
+    - Traduzione a caso https://random-word-api.herokuapp.com/home
+    - Salva le traduzioni preferite con localstorage api e ultime
+-->
